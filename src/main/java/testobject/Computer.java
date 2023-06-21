@@ -2,10 +2,31 @@ package testobject;
 
 public class Computer {
 
-    public String name;
-    public int ram;
-    public int hdd;
-    public double weight;
+    private String name;
+    private int ram;
+    private int hdd;
+    private double weight;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getRam() {
+        return ram;
+    }
+
+    public void setRam(int ram) {
+        if(ram>0) {
+            this.ram = ram;
+        } else {
+            System.out.println("Значение" + ram + " не может быть отрицательным");
+        }
+
+    }
 
     public void on() {
         System.out.println("Компьютер включился. Моя модель " + name);
@@ -16,6 +37,6 @@ public class Computer {
     }
 
     public void load() {
-        System.out.println("Я загружаюсь. Мой объем = " + hdd + "Гб");
+        System.out.println("Я загружаюсь. Мой объем ОП = " + ram + "Гб");
     }
 }
