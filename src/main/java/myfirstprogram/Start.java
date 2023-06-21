@@ -14,6 +14,7 @@ public class Start {
         comp.on();
         comp.load();
         comp.off();
+
 //
 //        Bus bus = new Bus();
 //        bus.timeArrival = "11:30";
